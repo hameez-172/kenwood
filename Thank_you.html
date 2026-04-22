@@ -32,15 +32,13 @@
     // Updated with your actual Pixel ID
     fbq('init', '1488498839308041'); 
     
-    // PageView and Purchase perfectly trigger when they hit this page
+    // Sirf PageView trigger hoga. Purchase event index.html k button par already laga hua hai!
     fbq('track', 'PageView');
-    // PRICE UPDATED HERE TO 3199
-    fbq('track', 'Purchase', {value: 2999.00, currency: 'PKR'}); 
     </script>
     <noscript><img height="1" width="1" style="display:none"
     src="https://www.facebook.com/tr?id=1488498839308041&ev=PageView&noscript=1"
     /></noscript>
-    </head>
+</head>
 <body class="p-6">
 
     <div class="success-card text-center p-8 border-t-8 border-green-600">
@@ -110,7 +108,6 @@
 <script>
         const urlParams = new URLSearchParams(window.location.search);
         const orderId = urlParams.get('oid') || '#KG-Internal';
-        // FALLBACK UPDATED HERE TO 3199
         const total = urlParams.get('total') || '2999';
 
         const formattedTotal = Number(total).toLocaleString('en-US');
