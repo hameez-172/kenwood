@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmed | Kitchen Corner</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .success-card { max-width: 500px; margin: 40px auto; background: white; border-radius: 30px; box-shadow: 0 20px 50px rgba(0,0,0,0.05); overflow: hidden; }
+        .check-icon { font-size: 70px; color: #16a34a; animation: scaleUp 0.5s ease-out; }
+        @keyframes scaleUp {
+            0% { transform: scale(0); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    // Updated with your actual Pixel ID
+    fbq('init', '1488498839308041'); 
+    
+    // PageView and Purchase perfectly trigger when they hit this page
+    fbq('track', 'PageView');
+    // PRICE UPDATED HERE TO 3199
+    fbq('track', 'Purchase', {value: 2999.00, currency: 'PKR'}); 
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1488498839308041&ev=PageView&noscript=1"
+    /></noscript>
+    </head>
+<body class="p-6">
+
+    <div class="success-card text-center p-8 border-t-8 border-green-600">
+        <div class="mb-6">
+            <i class="fas fa-check-circle check-icon"></i>
+        </div>
+
+        <h1 class="text-3xl font-extrabold text-slate-900 mb-2 tracking-tight">Order Confirmed!</h1>
+        <p class="text-slate-500 font-medium mb-8">Your order has been successfully placed.</p>
+
+        <div class="bg-slate-50 rounded-2xl p-6 mb-8 border border-slate-100 text-left">
+            <div class="flex justify-between mb-3 border-b border-slate-200 pb-2">
+                <span class="text-slate-500 font-semibold text-sm">Order ID:</span>
+                <span id="order-id" class="text-slate-900 font-bold">#KG-Loading</span>
+            </div>
+            <div class="flex justify-between border-b border-slate-200 pb-2 mb-3">
+                <span class="text-slate-500 font-semibold text-sm">Product:</span>
+                <span class="text-slate-900 font-bold">Imported Kenwood Grinder</span>
+            </div>
+            <div class="flex justify-between">
+                <span class="text-slate-500 font-semibold text-sm">Total Bill:</span>
+                <span id="total-price" class="text-red-600 font-extrabold">Rs 2,999</span>
+            </div>
+        </div>
+
+        <div class="text-left space-y-4 mb-8">
+            <h3 class="font-bold text-slate-800"><i class="fas fa-list-ul text-blue-500 mr-2"></i> What Happens Next?</h3>
+            <div class="flex gap-4 items-start">
+                <div class="bg-blue-100 text-blue-600 p-2 rounded-lg text-sm font-bold w-8 h-8 flex items-center justify-center shrink-0">1</div>
+                <p class="text-sm text-slate-600 leading-snug">Our representative will call you within <b>24 hours </b> to verify your shipping address.</p>
+            </div>
+            <div class="flex gap-4 items-start">
+                <div class="bg-blue-100 text-blue-600 p-2 rounded-lg text-sm font-bold w-8 h-8 flex items-center justify-center shrink-0">2</div>
+                <p class="text-sm text-slate-600 leading-snug">Once verified, your parcel will be delivered at your doorstep within <b>24 hours</b> (Lahore Only).</p>
+            </div>
+        </div>
+
+        <div class="bg-amber-50 border border-amber-200 p-4 rounded-xl mb-8">
+            <div class="flex items-center gap-2 mb-1">
+                <i class="fas fa-exclamation-triangle text-amber-600 text-xs"></i>
+                <span class="text-amber-700 text-xs font-bold uppercase">Important Notice</span>
+            </div>
+            <p class="text-amber-700 text-[11px] leading-relaxed italic text-left">
+                Due to high demand for imported products, we only process orders confirmed via phone call. Please keep your phone nearby and active.
+            </p>
+        </div>
+
+        <a href="index.html" class="inline-block w-full bg-slate-900 text-white font-bold py-4 rounded-xl shadow-lg hover:bg-slate-800 transition duration-300">
+            Return to Homepage
+        </a>
+        
+        <a href="https://wa.me/923426881848?text=Hello,%20I%20have%20a%20query%20regarding%20my%20recent%20Kenwood%20Mini%20Grinder%20order." target="_blank" class="mt-4 flex items-center justify-center w-full bg-[#25D366] text-white font-bold py-4 rounded-xl shadow-lg hover:bg-[#128C7E] transition duration-300">
+            <i class="fab fa-whatsapp text-2xl mr-2"></i> WhatsApp Support
+        </a>
+        
+        <div class="mt-6 flex justify-center gap-5">
+            <a href="https://www.facebook.com/badartechmarketing/" target="_blank" class="text-slate-400 hover:text-blue-600 transition-colors text-2xl">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/badar_techmarketing/" target="_blank" class="text-slate-400 hover:text-pink-500 transition-colors text-2xl">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
+        <p class="mt-4 text-slate-400 text-[10px]">© 2026 Kitchen Corner Lahore. All Rights Reserved.</p>
+    </div>
+<script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const orderId = urlParams.get('oid') || '#KG-Internal';
+        // FALLBACK UPDATED HERE TO 3199
+        const total = urlParams.get('total') || '2999';
+
+        const formattedTotal = Number(total).toLocaleString('en-US');
+
+        document.getElementById('order-id').textContent = orderId;
+        document.getElementById('total-price').textContent = 'Rs ' + formattedTotal;
+    </script>
+</body>
+</html>
